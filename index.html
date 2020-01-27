@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Push Nav Mockup 1</title>
+    <style type="text/css">
+        body {
+            margin: 20px;
+            font-family: "Helvetica Neue", sans-serif;
+            font-size: 14px;
+            line-height: 150%;
+        }
+
+        body > * + * {
+            margin-top: 20px;
+        }
+
+        button, input {
+            font-size: inherit;
+            padding: 2px;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #999;
+            font-size: 1.25em;
+            text-transform: uppercase;
+        }
+
+        .c-nav * {
+            cursor: pointer;
+            display: block;
+        }
+
+        .c-nav > * + * {
+            margin-top: 2px;
+        }
+
+        .c-nav .--cur-nav {
+            font-weight: bold;
+        }
+
+        .c-section {
+            border-radius: 5px;
+            background: #eee;
+            padding: 1em;
+        }
+
+        .c-section .c-text--info {
+            background: greenyellow;
+            color: #006600;
+            border-radius: 3px;
+            padding: 3px 5px;
+        }
+
+        input[type='number'] {
+            width: 50px;
+        }
+
+        button {
+            -webkit-appearance: none;
+            background: dodgerblue;
+            border-radius: 3px;
+            color: white;
+            padding: 5px 20px;
+        }
+    </style>
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let curViewId = 'myitems';
+            let curNavId = 'overlay-plot-dmx';
+            renderNav(curNavId);
+        });
+    </script>
+</head>
+<body>
+    <h1>Push Navigation Mockup v1</h1>
+    <div class="c-section c-nav" id="nav"></div>
+    <div class="c-section c-view" id="view"></div>
+</body>
+</html>
